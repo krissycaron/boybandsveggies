@@ -20,11 +20,10 @@ var veggieElement = document.getElementById(vegetables);
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
 
   // Add the band names into the correct <div>
-  currentBand = document.getElementById("boy-bands");
-
-
-  // Add the veggie names into the correct <div>
-  currentVeggie = document.getElementById("vegetables");
-  console.log(currentBand + currentVeggie);
+  currentBand.innerHTML = '<div>' + "boy-bands" ;
+ // Add the veggie names into the correct <div>
+  currentVeggie.innerHTML = '<div>' + "vegetables";
 }
+
+console.log(currentBand + currentVeggie);
 
