@@ -14,16 +14,23 @@ var currentVeggie = 0;
 var bandElement = document.getElementById("boy-bands");
 
 // Get a reference to the appropriate DOM element for vegetables
-var veggieElement = document.getElementById(vegetables);
+var veggieElement = document.getElementById("vegetables");
 
 // Start looping
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
 
   // Add the band names into the correct <div>
-  currentBand.innerHTML = '<div>' + "boy-bands" ;
+  currentBand = bands[loopTracker];
+  bandElement.innerHTML += "<div>" + currentBand + "</div>";
  // Add the veggie names into the correct <div>
-  currentVeggie.innerHTML = '<div>' + "vegetables";
+  currentVeggie = vegetables[loopTracker];
+  veggieElement.innerHTML += "<div>" + currentVeggie + "</div>";
 }
 
-console.log(currentBand + currentVeggie);
+//must have a getElementByID to be able pull the ID from the html code in
+
+// boybands.innerHTML += "this is the text inside the div"; This is a setter of text inside html 
+// var thing = boybands(div id).innerHTML; this is only = because it gets the thing doesnt write it /getter/
+
+
 
